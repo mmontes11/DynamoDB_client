@@ -1,7 +1,7 @@
 dynamodb-client
 ===============
 
-A sample NodeJS client app for Amazon DynamoDB
+A sample NodeJS + Express + Jade client app for Amazon DynamoDB
 
 ## Installation
 
