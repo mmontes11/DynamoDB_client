@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  div.textColumn 
+    h1: a(href='/') DynamoDB Client
+    p A sample NodeJS client app for Amazon DynamoDB
+
+  div.linksColumn
+    h2 Actions
+    ul
+      li: a(href='/list') List Tables
+      li: a(href='/create') Create Table
+      li: a(href='/describe') Describe Table
+    h2 Docs
+    ul
+      li: a(href='http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html') AWS Elastic Beanstalk overview
+      li: a(href='http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts.html') AWS Elastic Beanstalk concepts
+      li: a(href='http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_nodejs_express.html') Deploy an Express Application to AWS Elastic Beanstalk
+      li: a(href='http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_nodejs_express_elasticache.html') Deploy an Express Application with Amazon ElastiCache to AWS Elastic Beanstalk
+      li: a(href='http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_nodejs_geddy.html') Deploy a Geddy Application with Amazon ElastiCache to AWS Elastic Beanstalk 
+      li: a(href='http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_nodejs_custom_container.html') Customizing and Configuring a Node.js Container 
+      li: a(href='http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.loggingS3.title.html') Working with Logs
+     

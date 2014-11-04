@@ -1,0 +1,16 @@
+{
+  "name": "DynamoDB-Client",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "3.0.5",
+    "jade": "0.27.7",
+    "socket.io": "0.9.13",
+    "dynamodb": "0.3.6",
+    "jquery": "latest",
+    "bootstrap": "latest"
+  },
+  "scripts": {
+  	"start": "node app.js"
+  }
+}

@@ -1,0 +1,18 @@
+extends layout
+
+block content
+	div.textColumn
+		h1: a(href='/') DynamoDB Client
+		p Create a table in Amazon DynamoDB
+	div.linksColumn	
+		form(action='/createtable',method='post')
+			div(data-role='fieldcontain')
+			fieldset(data-role='controlgroup')
+				label(for='tableName') Table Name: 
+					input(id='tableName',type='text',value='',placeholder='My Table',name='tableName')
+			div(data-role='fieldcontain')
+			fieldset(data-role='controlgroup')
+				label(for='tableID') Table ID: 
+					input(id='tableID',type='text',value='',placeholder='ID for My Table',name='tableID')
+			div(data-role='fieldcontain')
+				input(type='submit',value='Create',data-transition='fade', data-theme='c')

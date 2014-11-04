@@ -1,0 +1,35 @@
+extends layout
+
+block content
+	div.textColumn
+		h1: a(href='/') DynamoDB Client
+		p Details of #{tableName}, located in Amazon DynamoDB
+	div.linksColumn	
+		div
+			strong Table Name: 
+			label #{details.TableName}
+		br
+		div
+			strong Number of Items: 
+			label #{details.ItemCount}
+		br	
+		div
+			strong HashKeyElement: 
+			label #{details.KeySchema.HashKeyElement.AttributeName}
+		br
+		div
+			strong Read Capacity Units: 
+			label #{details.ProvisionedThroughput.ReadCapacityUnits}
+		br
+		div
+			strong Write Capacity Units: 
+			label #{details.ProvisionedThroughput.WriteCapacityUnits}
+		br
+		div
+			strong Table Size (in bytes): 
+			label #{details.TableSizeBytes}
+		br
+		div
+			strong Table Status: 
+			label #{details.TableStatus}
+		br

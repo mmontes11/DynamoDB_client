@@ -1,0 +1,16 @@
+script(src='/socket.io/socket.io.js')
+script
+
+  window.log_info = function() {
+      if (window.console && window.console.log) {
+          try {
+          window.console.log.apply(window.console, arguments);
+          } catch (e) {}
+      }
+  }
+
+  var socket = io.connect();
+  socket.on('news', function (data) {
+    log_info(data);
+    socket.emit('my other event', { my: 'data' });
+  });

@@ -1,0 +1,16 @@
+extends layout
+
+block content
+	div.textColumn
+		h1: a(href='/') DynamoDB Client
+		p Describe a table from Amazon DynamoDB
+	div.linksColumn	
+		form(action='/describeTable',method='post')
+			div(data-role='fieldcontain')
+			fieldset(data-role='controlgroup')
+				label(for='tableName') Table : 
+					select(name='tableName',id='tableName')
+						each table, i in tables
+							option(value='#{table}') #{table}
+			div(data-role='fieldcontain')
+				input(type='submit',value='Get Details',data-transition='fade', data-theme='c')

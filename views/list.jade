@@ -1,0 +1,12 @@
+extends layout
+
+block content
+	div.textColumn
+		h1: a(href='/') DynamoDB Client
+		p List tables from Amazon DynamoDB 
+		
+	div.linksColumn
+		h3 Tables
+		ul
+			each item in tables
+				li= item
