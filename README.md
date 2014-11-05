@@ -7,7 +7,7 @@ A sample NodeJS + Express + Jade client app for Amazon DynamoDB
 
 1. Replace 'XXXX' for your Amazon AccessKeyId and SecretAccessKey in ddb/ddb.js .
 
-2. Install nodeJS and npm and execute: 
+2. Install NodeJS and npm and execute: 
   npm install
   npm start
 
