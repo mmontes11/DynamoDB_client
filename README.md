@@ -1,4 +1,4 @@
-dynamodb-client
+DynamoDB_client
 ===============
 
 A sample NodeJS + Express + Jade client app for Amazon DynamoDB
